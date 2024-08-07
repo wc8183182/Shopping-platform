@@ -1,0 +1,74 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+list-style: none;
+}
+
+
+.Marquee{
+width: 100%;
+color: #8ce600;
+background-color: #000;
+text-align: center;
+padding: 15px;
+
+}
+
+
+.Marquee-pic img{
+width: 100%;
+height:300px;}
+
+.header_action{
+padding: 5px;
+text-align: right;
+
+}
+
+.header_action a{
+display: inline-block;
+text-decoration: none;
+margin-right: 5px;
+color: #000;
+}
+
+.header_logo{
+font-size: 25px;
+display: flex;
+justify-content: center;
+color: #ad1414;}
+
+.header_menu{
+display: flex;
+justify-content: center
+}
+
+.header_menu_item{
+display: inline-block;
+text-decoration: none;
+margin-bottom: 1% ;
+margin-top: 1% ;
+padding: 10px;
+color: #000;
+transition: .5s;
+font-weight: 700;
+position: relative;
+/* font-size: 0; */
+
+} 
+.header_menu nav{
+    font-size: 0px;
+}
+
+.header_menu a{
+font-size: 18px;}
+.header_menu_item:hover{
+background-color: #8ce600;
+position: relative;
+}
+.activities{
+position: absolute;
+right: 0;
+white-space: nowrap;
+}
