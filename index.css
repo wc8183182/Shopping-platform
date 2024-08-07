@@ -69,6 +69,18 @@ position: relative;
 }
 .activities{
 position: absolute;
-right: 0;
-white-space: nowrap;
+right: -84px;
+bottom: -145px;
+white-space: nowrap;/*讓他在同一行*/
+background-color: #fff;
+padding: 10px;
+display: none;
+z-index: 1;
+}
+.header_menu a:hover{
+.activities{
+display: block;}}
+
+.activities li{
+margin-bottom: 17px;
 }
