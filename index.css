@@ -71,7 +71,7 @@ position: relative;
 position: absolute;
 right: -84px;
 bottom: -145px;
-white-space: nowrap;/*讓他在同一行*/
+white-space: nowrap;/*讓他占同一行*/
 background-color: #fff;
 padding: 10px;
 display: none;
@@ -82,5 +82,28 @@ z-index: 1;
 display: block;}}
 
 .activities li{
-margin-bottom: 17px;
+margin-bottom: 15px;
 }
+.activities li:hover{
+background-color: #8ce600;
+}
+.activities:nth-child(1){
+position: absolute;
+right: 0px;
+bottom: -350px;
+white-space: nowrap;/*讓他占同一行*/
+background-color: #fff;
+padding: 10px;
+display: none;
+z-index: 1;
+}
+.activities:nth-child(2){
+    position: absolute;
+    right: 0px;
+    bottom: -145px;
+    white-space: nowrap;/*讓他占同一行*/
+    background-color: #fff;
+    padding: 10px;
+    display: none;
+    z-index: 1;
+    }
