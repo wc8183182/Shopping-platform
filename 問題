@@ -21,3 +21,7 @@ position
         .item:hover .add-to-car {
             display: block;
           } 為什麼hover後面是.
+
+
+
+          wrap寬設960 如果它裡面元素超過960又設flex會怎麼樣
