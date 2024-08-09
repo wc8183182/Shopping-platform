@@ -1,0 +1,23 @@
+照片檔要怎麼用
+
+.item :hover > .add-to-car{/*放在同一層可以用加號*/
+  display: block;}
+為什麼有空格時 加入購物車才會顯示出來
+
+position
+<div class="item">
+          <a href="#">
+            <img src="./每週排行/鬱金香手環.webp" alt="" />
+            <div class="add-to-car">加入購物車</div>
+            <span>龍貓鬱金香手環</span>
+            <span>NT $690</span></a
+          >
+        </div>
+        為什麼加入購物車寫外面會跑到別的地方
+
+
+        
+        
+        .item:hover .add-to-car {
+            display: block;
+          } 為什麼hover後面是.
