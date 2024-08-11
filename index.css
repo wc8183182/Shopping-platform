@@ -187,3 +187,9 @@
   color: #d39c06;
   border: 1px solid #d39c06;
 }
+
+.necklacks_logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
