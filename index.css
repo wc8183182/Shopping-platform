@@ -21,14 +21,12 @@
   text-align: right;
 }
 
-
 .header_action a {
   display: inline-block;
   text-decoration: none;
   margin-right: 5px;
   color: #000;
 }
-
 
 .header_logo {
   font-size: 25px;
@@ -58,7 +56,6 @@
   font-size: 0px;
 }
 
-
 .header_menu a {
   font-size: 18px;
 }
@@ -75,7 +72,7 @@
   z-index: 1;
 }
 
-.header_menu_item:hover .activities{
+.header_menu_item:hover .activities {
   display: block;
 }
 /* .header_menu a:hover {
@@ -89,48 +86,47 @@
   padding: 10px;
 }
 
-
 .activities li:hover {
   background-color: #8ce600;
 }
 
-.Marquee-pic img{
-height: auto;
-width: 100%;
+.Marquee-pic img {
+  height: auto;
+  width: 100%;
 }
 
-.wrap{
-width: 960px;
-margin: auto;
-
+.wrap {
+  width: 960px;
+  margin: auto;
 }
-.wrap h2{
-text-align: center;
-padding-top: 50px;
-padding-bottom: 20px;}
-
-.item-group{
-display: flex;
-justify-content: center;
+.wrap h2 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
-
-
-.item img{
-width: 250px;
-height: 250px;
+.item-group {
+  display: flex;
+  justify-content: center;
 }
 
-.item span{
-display: block;
-padding: 2px;}
+.item img {
+  width: 250px;
+  height: 250px;
+}
 
-.item{
-/* display: inline-block; */
-padding: 20px;
-position: relative;}
+.item span {
+  display: block;
+  padding: 2px;
+}
 
-.add-to-car{
+.item {
+  /* display: inline-block; */
+  padding: 20px;
+  position: relative;
+}
+
+.add-to-car {
   position: absolute;
   bottom: 80px;
   left: 14%;
@@ -142,53 +138,51 @@ position: relative;}
   font-size: 15px;
   border-radius: 5px;
   transition: background-color 0.5s, color 0.5s;
-  
-  }
-
-
-  .item:hover .add-to-car {
-    display: block;
-  }
-
-  .item img:hover{
-
-  }
-  
-  .add-to-car:hover {
-    background-color: #d39c06;
-    color: #fff;
-  }
-
-.item-group a{
-color: #000;
-text-decoration: none;
 }
 
+.item:hover .add-to-car {
+  display: block;
+}
 
-.item>span:nth-child(even){
+.item img:hover {
+}
+
+.add-to-car:hover {
+  background-color: #d39c06;
+  color: #fff;
+}
+
+.item-group a {
+  color: #000;
+  text-decoration: none;
+}
+
+.item > span:nth-child(even) {
   padding-top: 5px;
-font-weight: 900;}
-
-.earring-logo{
-display: flex;
-justify-content: center;
-margin-bottom: 50px;
+  font-weight: 900;
 }
 
-.product_list_button{
-width:fit-content;
-background-color: #d39c06;
-text-decoration: none  ;
-color: #fff;
-padding: 6px 80px;
-margin: 40px auto 40px;
-font-weight: 800;
+.earring-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
-.product_list{
-display: flex;
-justify-content: center;}
 
-.product_list_button:hover{
+.product_list_button {
+  width: fit-content;
+  background-color: #d39c06;
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 80px;
+  margin: 40px auto 40px;
+  font-weight: 800;
+}
+.product_list {
+  display: flex;
+  justify-content: center;
+}
+
+.product_list_button:hover {
   background-color: #fff;
   color: #d39c06;
   border: 1px solid #d39c06;
