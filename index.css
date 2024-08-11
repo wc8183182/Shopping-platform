@@ -128,8 +128,7 @@
 
 .add-to-car {
   position: absolute;
-  bottom: 80px;
-  left: 14%;
+  bottom: 13px;
   background-color: #fff;
   width: 210px;
   text-align: center;
@@ -138,13 +137,6 @@
   font-size: 15px;
   border-radius: 5px;
   transition: background-color 0.5s, color 0.5s;
-}
-
-.item:hover > .add-to-car {
-  display: block;
-}
-
-.item img:hover {
 }
 
 .add-to-car:hover {
@@ -192,4 +184,22 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.prod-mask {
+  position: absolute; /*定在item*/
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 250px;
+  height: 250px;
+}
+
+.prod-mask {
+  display: none;
+}
+
+.item:hover .add-to-car {
+  display: flex;
+  justify-content: center;
 }
