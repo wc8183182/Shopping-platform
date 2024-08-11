@@ -3,6 +3,9 @@
 .item :hover > .add-to-car{/*放在同一層可以用加號*/
   display: block;}
 為什麼有空格時 加入購物車才會顯示出來
+Ans: 因為 css 語法的關係, 不空格對 css 來說是無效語法, 所以效果就會出不來
+
+
 
 position
 <div class="item">
@@ -14,14 +17,13 @@ position
           >
         </div>
         為什麼加入購物車寫外面會跑到別的地方
-
-
-        
+        Ans: 因為加入購物車放在 item 裡面,他身上的 position: absolute
+        才會認 item 身上的 position: relative 當作定位的參考位置        
         
         .item:hover .add-to-car {
             display: block;
           } 為什麼hover後面是.
-
-
+          Ans: 這樣寫代表 item 這個元素 hover 時, .add-to-car 這個樣式要是甚麼
 
           wrap寬設960 如果它裡面元素超過960又設flex會怎麼樣
+          Ans: 他會以超過 960 的寬度顯示, 並且因為預設 flex-direction: row 所以會擺左右
