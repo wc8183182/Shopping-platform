@@ -50,21 +50,20 @@
 .header_menu a {
   /* font-size: 18px; */
 }
-.header_menu_item:hover {
-  /* background-color: #8ce600; */
-}
+
 .activities {
-  position: absolute;
-  top: calc(18px + 20px + 2%);
-  left: 0;
-  white-space: nowrap; /*讓他占同一行*/
-  background-color: #fff;
-  display: none;
-  z-index: 1;
+  /* position: absolute; */
+  /* top: calc(18px + 20px + 2%);
+  left: 0; */
+  /*讓他占同一行*/
+  /* white-space: nowrap; */
+  /* background-color: #fff; */
+  /* display: none; */
+  /* z-index: 1; */
 }
 
 .header_menu_item:hover .activities {
-  display: block;
+  /* display: block; */
 }
 /* .header_menu a:hover {
   .activities {
@@ -73,12 +72,12 @@
 } */
 
 .activities li {
-  margin-bottom: 15px;
-  padding: 10px;
+  /* margin-bottom: 15px;
+  padding: 10px; */
 }
 
 .activities li:hover {
-  background-color: #8ce600;
+  /* background-color: #8ce600; */
 }
 
 .Marquee-pic img {
