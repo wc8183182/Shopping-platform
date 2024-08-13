@@ -3,27 +3,58 @@
 .item :hover > .add-to-car{/*放在同一層可以用加號*/
   display: block;}
 為什麼有空格時 加入購物車才會顯示出來
-Ans: 因為 css 語法的關係, 不空格對 css 來說是無效語法, 所以效果就會出不來
+--Ans: 因為 css 語法的關係, 不空格對 css 來說是無效語法, 所以效果就會出不來
 
 
-
-position
-<div class="item">
+       position
+      <div class="item">
           <a href="#">
             <img src="./每週排行/鬱金香手環.webp" alt="" />
             <div class="add-to-car">加入購物車</div>
             <span>龍貓鬱金香手環</span>
             <span>NT $690</span></a
           >
-        </div>
+        </div>  
         為什麼加入購物車寫外面會跑到別的地方
-        Ans: 因為加入購物車放在 item 裡面,他身上的 position: absolute
+--Ans: 因為加入購物車放在 item 裡面,他身上的 position: absolute
         才會認 item 身上的 position: relative 當作定位的參考位置        
+        
         
         .item:hover .add-to-car {
             display: block;
           } 為什麼hover後面是.
-          Ans: 這樣寫代表 item 這個元素 hover 時, .add-to-car 這個樣式要是甚麼
+          --Ans: 這樣寫代表 item 這個元素 hover 時, .add-to-car 這個樣式要是甚麼
+           wrap寬設960 如果它裡面元素超過960又設flex會怎麼樣
+          --Ans: 他會以超過 960 的寬度顯示, 並且因為預設 flex-direction: row 所以會擺左右
 
-          wrap寬設960 如果它裡面元素超過960又設flex會怎麼樣
-          Ans: 他會以超過 960 的寬度顯示, 並且因為預設 flex-direction: row 所以會擺左右
+
+          <a href="#">
+          <div class="item">
+            <img class="source" alt="" />
+
+
+
+            <span>龍貓鬱金香手環</span>
+            <span>NT $690</span>
+            <div class="prod-mask">
+              <div class="add-to-car">加入購物車</div>
+            </div>
+          </div>
+        </a>
+        24個圖片都是長這樣，如果我想讓後面的source改變圖片樣式，
+        a.item .source:nth-child(2) {
+       border-image: url(./每週排行/珍珠項鍊.webp);
+        }
+
+
+
+        .item > span:nth-child(even) {
+       padding-top: 5px;
+       font-weight: 900; 
+      }可以寫成這樣嗎
+
+
+  我想去掉最後一個偽類
+  .header_menu_item :last-child::after {
+  content: none;
+}沒有生效

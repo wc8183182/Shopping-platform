@@ -51,6 +51,15 @@
   position: relative;
   /* font-size: 0; */
 }
+.header_menu_item::after {
+  content: ">";
+  transform: rotate(90deg);
+  display: inline-block;
+}
+
+.header_menu_item :last-child::after {
+  content: none;
+}
 
 .header_menu nav {
   font-size: 0px;
@@ -162,7 +171,7 @@
   background-image: url(./每週排行/鬱金香手環2.webp); /* 替換為新圖片 */
 }
 
-a.item .source:nth-child(2) {
+a > .item > .source:nth-child(2) {
   border-image: url(./每週排行/珍珠項鍊.webp);
 }
 
