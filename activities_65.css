@@ -12,24 +12,28 @@
   padding: 15px;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-  width: 1400px;
-  top: 50px;
-  background-color: #fff;
-}
 .header_action {
   padding: 5px 5px 0 5px;
   text-align: right;
 }
-.header_action ul {
-  margin-top: 10px;
+
+.header_action a {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 5px;
+  color: #000;
 }
+
 .header_action li {
   display: inline-block;
   text-decoration: none;
   color: #000;
+}
+
+.header {
+  width: 1400px;
+  display: flex;
+  justify-content: center;
 }
 
 .header_logo {
@@ -54,7 +58,7 @@
 .activities {
   position: absolute;
   display: none;
-  background-color: aliceblue;
+  background-color: #fff;
   white-space: nowrap;
   top: 35px;
   z-index: 1;
@@ -74,7 +78,7 @@
 .promotioninfo {
   width: 1400px;
   margin: auto;
-  background-color: #999;
+  background-color: rgba(214, 44, 44, 0.5);
   opacity: 0.7;
   display: flex;
   justify-content: center;
@@ -95,6 +99,7 @@
 .title {
   padding: 20px 0;
   color: #971111;
+  font-size: 25px;
 }
 
 .item-group {
@@ -120,11 +125,12 @@ span:nth-last-child(2) {
 }
 .add-to-car {
   display: block;
-
-  width: 420px;
-  background-color: #999;
+  width: 380px;
+  background-color: rgba(0, 0, 0, 0.25);
+  opacity: 0.7;
   margin: auto auto 90px;
   height: 30px;
+  border-radius: 5px;
 }
 
 .fa-solid {
