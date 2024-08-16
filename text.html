@@ -4,63 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      ul {
-        /* 取消ul預設的內縮及樣式 */
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      ul.drop-down-menu {
-        border: #ccc 1px solid;
-        display: inline-block;
-        font-family: "Open Sans", Arial, sans-serif;
-        font-size: 13px;
-      }
-
-      ul.drop-down-menu li {
-        position: relative;
-        white-space: nowrap;
-        border-right: #ccc 1px solid;
-      }
-
-      ul.drop-down-menu > li:last-child {
-        border-right: none;
-      }
-
-      ul.drop-down-menu > li {
-        float: left; /* 只有第一層是靠左對齊*/
-      }
-
-      ul.drop-down-menu a {
-        background-color: #fff;
-        color: #333;
-        display: block;
-        padding: 0 30px;
-        text-decoration: none;
-        line-height: 40px;
-      }
-      ul.drop-down-menu a:hover {
-        /* 滑鼠滑入按鈕變色*/
-        background-color: #ef5c28;
-        color: #fff;
-      }
-      ul.drop-down-menu li:hover > a {
-        /* 滑鼠移入次選單上層按鈕保持變色*/
-        background-color: #ef5c28;
-        color: #fff;
-      }
-    </style>
   </head>
   <body>
-    <ul class="drop-down-menu">
-      <li><a href="#">關於我們</a></li>
-      <li><a href="#">Magento</a></li>
-      <li><a href="#">服務項目</a></li>
-      <li><a href="#">專案介紹</a></li>
-      <li><a href="#">資訊分享</a></li>
-      <li><a href="#">聯絡我們</a></li>
-    </ul>
+    <div class="wrap">
+      <input type="radio" name="btn" id="btn1" checked />
+      <label for="btn1">顯示</label>
+      <input type="radio" name="btn" id="btn2" />
+      <label for="btn2">隱藏</label>
+      <div class="box"></div>
+    </div>
+
+    <style>
+      .wrap {
+        width: 300px;
+        height: 800px;
+        margin: 150px auto 0;
+        text-align: center;
+      }
+
+      .box {
+        width: 100%;
+        height: 100px;
+        background: orange;
+        margin-top: 10px;
+      }
+
+      #btn2:checked ~ .box {
+        display: none;
+      }
+    </style>
   </body>
 </html>

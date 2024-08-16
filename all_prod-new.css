@@ -30,6 +30,10 @@
   color: #000;
 }
 
+.header_border {
+  box-shadow: 0px 5px 10px;
+  margin-bottom: 20px;
+}
 .header {
   width: 1400px;
   display: flex;
@@ -75,69 +79,81 @@
 .activities li:hover {
   background-color: #8ce600;
 }
-.promotioninfo {
-  width: 1400px;
-  margin: auto;
-  background-color: rgba(214, 44, 44, 0.5);
-  opacity: 0.7;
+
+.container {
   display: flex;
-  justify-content: center;
+}
+.prod_list {
+  width: 30%;
+  padding-top: 30px;
+  padding-left: 350px;
 }
 
-.PromotionInfo-qualifications {
-  display: inline-block;
-  padding: 20px;
+.prod_list label {
+  margin: 10px;
+  width: 40px;
 }
 
-.PromotionInfo-qualifications a {
+.dropdown-content div {
+  padding: 5px;
+}
+
+/* 隱藏 input */
+.prod_list input {
+  display: none;
+}
+
+/* 隱藏下拉內容 */
+.dropdown-content {
+  display: none;
+  margin-left: 20px;
+}
+
+/* 顯示下拉內容當 checkbox 被勾選時 */
+#earring_toggle:checked ~ .dropdown-content {
   display: block;
 }
-.wrap {
-  width: 1400px;
-  margin: auto;
-}
-.title {
-  padding: 20px 0;
-  color: #971111;
-  font-size: 25px;
+
+#earring2_toggle:checked ~ .dropdown-content {
+  display: block;
 }
 
-.item-group {
-  display: flex;
-  justify-content: center;
+/* 增加鼠標指針 */
+.prod_list label {
+  cursor: pointer;
+  display: block;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.prod_list li {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.prod_title {
+  font-size: 20px;
+  padding-top: 30px;
 }
 
 .item {
   padding: 10px;
 }
 
-.item img {
-  width: 460px;
-}
-.item span {
-  display: block;
-  padding: 5px;
+.item-group {
+  display: flex;
+  justify-content: left;
 }
 
-span:nth-last-child(2) {
-  margin-bottom: 50px;
+.item-group span {
+  display: block;
+}
+
+.item span:nth-of-type(2) {
+  padding-top: 10px;
   font-weight: 800;
 }
-.add-to-car {
-  display: block;
-  width: 380px;
-  background-color: rgba(0, 0, 0, 0.25);
-  opacity: 0.7;
-  margin: auto auto 90px;
-  height: 30px;
-  border-radius: 5px;
-}
 
-.fa-solid {
-  display: flex;
-  justify-content: center;
-  line-height: 30px;
-}
 .footer {
   display: flex;
   justify-content: center;
