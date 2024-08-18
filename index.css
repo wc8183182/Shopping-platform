@@ -47,10 +47,9 @@
   position: relative;
   /* font-size: 0; */
 }
-.header_menu_item::after {
-  content: ">";
-  transform: rotate(90deg);
-  display: inline-block;
+
+.header_menu_item :last-child {
+  content: "";
 }
 
 .header_menu_item :last-child::after {
