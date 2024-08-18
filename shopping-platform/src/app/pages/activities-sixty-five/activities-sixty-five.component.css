@@ -1,0 +1,235 @@
+.Marquee {
+  width: 100%;
+  color: #8ce600;
+  background-color: #000;
+  text-align: center;
+  padding: 15px;
+}
+
+.header_action {
+  padding: 5px 5px 0 5px;
+  text-align: right;
+}
+
+.header_action a {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 5px;
+  color: #000;
+}
+
+.header_action li {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  width: 1400px;
+  display: flex;
+  justify-content: center;
+  border: #000;
+}
+
+.header_border {
+  box-shadow: 0px 5px 10px;
+  margin-bottom: 20px;
+}
+.header_logo {
+  display: inline-block;
+}
+
+.header_menu {
+  display: inline-block;
+}
+
+.header_menu_item {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.activities {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  white-space: nowrap;
+  top: 35px;
+  z-index: 1;
+}
+
+.activities li {
+  padding: 10px;
+}
+
+.header_menu_item:hover .activities {
+  display: block;
+}
+
+.activities li:hover {
+  background-color: #8ce600;
+}
+.promotioninfo {
+  width: 1400px;
+  margin: auto;
+  background-color: rgba(214, 44, 44, 0.5);
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+}
+
+.PromotionInfo-qualifications {
+  display: inline-block;
+  padding: 20px;
+}
+
+.PromotionInfo-qualifications a {
+  display: block;
+}
+
+.Ketentuan {
+  position: fixed;
+  top: 30%;
+  right: 38%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+
+.Ketentuan_content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px;
+  text-align: center;
+  width: 500px;
+}
+
+.Ketentuan_content p {
+  margin: 16px 0;
+}
+
+.close-button {
+  background-color: #007bff;
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.wrap {
+  width: 1400px;
+  margin: auto;
+}
+.title {
+  padding: 20px 0;
+  color: #971111;
+  font-size: 25px;
+}
+
+.item-group {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  padding: 10px;
+}
+
+.item img {
+  width: 460px;
+}
+.item span {
+  display: block;
+  padding: 5px;
+}
+
+span:nth-last-child(2) {
+  margin-bottom: 50px;
+  font-weight: 800;
+}
+.add-to-car {
+  display: block;
+  width: 380px;
+  background-color: rgba(0, 0, 0, 0.25);
+  opacity: 0.7;
+  margin: auto auto 90px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.fa-solid {
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 35px;
+  position: relative;
+}
+.footer::after {
+  content: "";
+  position: absolute;
+  width: 1100px;
+  height: 1px;
+  background-color: #000;
+  top: -25px;
+}
+
+.about-me {
+  width: 370px;
+  text-align: center;
+}
+
+.about-me h3 {
+  margin-bottom: 25px;
+}
+.about-me a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #000;
+}
+
+.Info {
+  width: 370px;
+  text-align: center;
+}
+
+.Info h3 {
+  margin-bottom: 25px;
+}
+.Info a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #000;
+}
+
+.Contact-us {
+  width: 370px;
+  text-align: center;
+}
+
+.Contact-us h3 {
+  margin-bottom: 25px;
+}
+.Contact-us div {
+  color: #000;
+  text-align: center;
+}
+
+.Payment-method {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
