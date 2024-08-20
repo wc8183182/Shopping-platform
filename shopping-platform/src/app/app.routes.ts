@@ -28,12 +28,14 @@ export const routes: Routes = [
     path: 'products/discount/65',
     component: ActivitiesSixtyFiveComponent
   },
-  {
-    path: 'products/discount/85',
-    component: ActivitiesEightyFiveComponent
-  },
+
   {
     path: 'products/bronze',
     component: ActivitiesBronzeComponent
+  },
+  
+  {
+    path: 'eight-five',
+    component: ActivitiesEightyFiveComponent
   },
 ];
